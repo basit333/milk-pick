@@ -259,8 +259,6 @@ body {
   max-width: 550px;
   width: 100%;
   height: min-content;
-  /* min-height: 460px;
-  height: 460px; */
   background: var(--color-neutral-n8);
   border-radius: 0px 20px 0px 0px;
   padding: 42px 20px 109px 20px;
@@ -511,7 +509,7 @@ body {
 }
 
 .milk-product-brand {
-  display: block;
+  display: inline-block;
   margin: 0 auto 37px auto;
 }
 
