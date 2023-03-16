@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milk Pick</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts link Chivo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo&display=swap" rel="stylesheet">
+
+  <!-- Fonts link Overpass -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="main-container">
+    <nav class="header-nav">
+      <div class="nav-img-box">
+        <img src="/images/Milk Pick Logo - Dark 1.png" alt="logo">
+      </div>
+      <div class="nav-items">
+        <button class="nav-item--close">
+          <img class="hamburger-close-img" src="/images/close.png" alt="close">
+        </button>
+        <div class="nav-item">
+          <a href="">Compare Milk</a>
+        </div>
+        <div class="nav-item">
+          <a href="">Non-Dairy Milk</a>
+        </div>
+        <div class="nav-item">
+          <a href="">Blog</a>
+        </div>
+      </div>
+
+      <button class="hamburger">
+        <img class="hamburger-open-img" src="/images/hamburger-icon.png" alt="hamburger">
+      </button>
+    </nav>
+
+    <button id="nav-toggle">Menu</button>
+
+    <section class="header-banner">
+      <div class="header-banner--left">
+        <h1 class="header-banner-heading heading-primary">Find The Best Milk For You</h1>
+        <p class="header-banner-paragraph paragraph-primary">There are more plant-based milk options than ever before.
+          We make it easy to filter
+          through the
+          noise and find the best milk for you.</p>
+      </div>
+      <div class="header-banner--right">
+        <div class="header-banner-img-box">
+          <img src="/images/milk-bottle.png" alt="milk bottle">
+        </div>
+      </div>
+    </section>
+
+    <div class="hr-line"></div>
+
+    <section class="milk-pick-product-container">
+      <div class="milk-pick-product-wrapper">
+        <div class="milk-pick-product-left">
+          <div class="milk-product-filter-container">
+            <div class="milk-type-box">
+              <div class="milk-type-button">
+                <h3 class="milk-type-button-heading">Milk Type</h3>
+                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+
+              <div class="milk-type-content">
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="almond">
+                  <span class="filter-product-title">Almond</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="Oat">
+                  <span class="filter-product-title">Oat</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="cashew">
+                  <span class="filter-product-title">Cashew</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="hazelnut">
+                  <span class="filter-product-title">Hazelnut</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="coconut">
+                  <span class="filter-product-title">Coconut</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="rice">
+                  <span class="filter-product-title">Rice</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="animal-free-whey">
+                  <span class="filter-product-title">Animal-Free Whey</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="potato">
+                  <span class="filter-product-title">Potato</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="pistachio">
+                  <span class="filter-product-title">Pistachio</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="hemp">
+                  <span class="filter-product-title">Hemp</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="sesame">
+                  <span class="filter-product-title">Sesame</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="spelt">
+                  <span class="filter-product-title">Spelt</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="millet">
+                  <span class="filter-product-title">Millet</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="barley">
+                  <span class="filter-product-title">Barley</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="buckwheat">
+                  <span class="filter-product-title">Buckwheat</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="quinoa">
+                  <span class="filter-product-title">Quinoa</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="macadamia-nut">
+                  <span class="filter-product-title">Macadamia Nut</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="brazil-nut">
+                  <span class="filter-product-title">Brazil Nut</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="pumpkin-seed">
+                  <span class="filter-product-title">Pumpkin Seed</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="pili-nut">
+                  <span class="filter-product-title">Pili Nut</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="chia-seed">
+                  <span class="filter-product-title">Chia Seed</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="flax-seed">
+                  <span class="filter-product-title">Flax Seed</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="milk-brand-box">
+              <div class="milk-brand-button">
+                <h3 class="milk-type-button-heading">Brand</h3>
+                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="milk-brand-content">
+                <div class="milk-brand-search-box">
+                  <input class="milk-brand-search-input" type="text" placeholder="Search your brand">
+                  <img class="milk-brand-search-icon" src="/images/search-icon-dark.png">
+                </div>
+                <div class="milk-brand-content-box">
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="almo">
+                    <span class="filter-product-title">Almo</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="alpro">
+                    <span class="filter-product-title">Alpro</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="altko">
+                    <span class="filter-product-title">Altko</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="beber">
+                    <span class="filter-product-title">Beber</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="better-than-milk">
+                    <span class="filter-product-title">Better Than Milk</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="better-moo(d)">
+                    <span class="filter-product-title">Better Moo(d)</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="blue-diamond">
+                    <span class="filter-product-title">Blue Diamond</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="bored-cows">
+                    <span class="filter-product-title">Bored Cows</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="bored-oats">
+                    <span class="filter-product-title">Bored Oats</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="bruce">
+                    <span class="filter-product-title">Bruce</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="califa-farms">
+                    <span class="filter-product-title">Califa Farms</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="chobani">
+                    <span class="filter-product-title">Chobani</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="dream">
+                    <span class="filter-product-title">Dream</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="DUG">
+                    <span class="filter-product-title">DUG</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="eden">
+                    <span class="filter-product-title">Eden</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="elmhurst-1925">
+                    <span class="filter-product-title">Elmhurst 1925</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="everyday-mylk-nut">
+                    <span class="filter-product-title">Everyday Mylk</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="forage-project">
+                    <span class="filter-product-title">Forage Project</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="good-hemp">
+                    <span class="filter-product-title">Good Hemp</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="good-karma">
+                    <span class="filter-product-title">Good Karma</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="good-mylk-co">
+                    <span class="filter-product-title">Good Mylk Co</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="green-heart">
+                    <span class="filter-product-title">Green Heart</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="hope-and-sesame">
+                    <span class="filter-product-title">Hope And Sesame</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="innocent-drinks">
+                    <span class="filter-product-title">Innocent Drinks</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="isola-bio">
+                    <span class="filter-product-title">Isola Bio</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="JOI">
+                    <span class="filter-product-title">JOI</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="kiki-milk">
+                    <span class="filter-product-title">Kiki Milk</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="lavva">
+                    <span class="filter-product-title">Lavva</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="malibu-mylk">
+                    <span class="filter-product-title">Malibu Mylk</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="brazil-nut">
+                    <span class="filter-product-title">Brazil Nut</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="malk">
+                    <span class="filter-product-title">Malk</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="mariani">
+                    <span class="filter-product-title">Mariani</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="marin-living-foods">
+                    <span class="filter-product-title">Marin Living Foods</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="milkadamia">
+                    <span class="filter-product-title">Milkadamia</span>
+                  </div>
+                  <div class="check-box-content">
+                    <input class="filter-product-checkbox" type="checkbox" id="milli">
+                    <span class="filter-product-title">Milli</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="milk-flavor-box">
+              <div class="milk-flavor-button">
+                <h3 class="milk-type-button-heading">Flavor</h3>
+                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="milk-flavor-content">
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="plain">
+                  <span class="filter-product-title">Plain</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="chocolate">
+                  <span class="filter-product-title">Chocolate</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="vanilla">
+                  <span class="filter-product-title">Vanilla</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="strawberry">
+                  <span class="filter-product-title">Strawberry</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="milk-storage-box">
+              <div class="milk-storage-button">
+                <h3 class="milk-type-button-heading">Storage</h3>
+                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="milk-storage-content">
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="milk-features-box">
+              <div class="milk-feature-button">
+                <h3 class="milk-type-button-heading">Features</h3>
+                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="milk-feature-content">
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="milk-buying-option-box">
+              <div class="milk-buying-option-button">
+                <h3 class="milk-type-button-heading">Buying Option</h3>
+                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="milk-buying-option-content">
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+                <div class="check-box-content">
+                  <input class="filter-product-checkbox" type="checkbox" id="">
+                  <span class="filter-product-title">Example</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="milk-pick-product-right">
+          <div class="milk-product-search-bar">
+            <input class="milk-product-search-input" type="text" placeholder="Search">
+            <button class="milk-product-search-btn">
+              <img src="/images/search-icon.png" alt="search icon">
+            </button>
+          </div>
+          <div class="milk-products-container">
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Almo Original Almond Milk.png" alt="almond milk">
+                <h3 class="milk-product-title">Almond Milk</h3>
+                <img class="milk-product-brand" src="/images/almo.png" alt="almo">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img"
+                  src="/images/Almond Breeze Shelf Stable Coconut Unsweetened Original Almondmilk.png"
+                  alt="almond breeze shelf">
+                <h3 class="milk-product-title">Coconutmilk Blend</h3>
+                <img class="milk-product-brand" src="/images/blue diamond almond breeze.png" alt="almond breeze">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Alpro Cashew Original Chilled.png" alt="alpro cashew">
+                <h3 class="milk-product-title">Cashew Milk</h3>
+                <img class="milk-product-brand" src="/images/alpro.png" alt="alpro">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/ALTKO Original Almond Mlk Base.png" alt="altko">
+                <h3 class="milk-product-title">Almond Milk</h3>
+                <img class="milk-product-brand" src="/images/altko.png" alt="altko">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Beber Chocolate Almondmilk.png" alt="beber chocolate">
+                <h3 class="milk-product-title">Fresh Almond</h3>
+                <img class="milk-product-brand" src="/images/beber.png" alt="beber">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Better Than Milk Organic Almond Drink.png"
+                  alt="better than milk">
+                <h3 class="milk-product-title">Organic Almond Milk</h3>
+                <img class="milk-product-brand" src="/images/better than milk.png" alt="better">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Bored Cow Creamy Vanilla Milk.png" alt="border cow vanilla">
+                <h3 class="milk-product-title">Vanilla</h3>
+                <img class="milk-product-brand" src="/images/bored cow.png" alt="bored cow">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Chobani Oatmilk Original.png" alt="chobani oatmilk">
+                <h3 class="milk-product-title">Oatmilk</h3>
+                <img class="milk-product-brand" src="/images/chobani.png" alt="chobani">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/DUG Original Potato Milk.png" alt="dug potato milk">
+                <h3 class="milk-product-title">Original Potato</h3>
+                <img class="milk-product-brand" src="/images/dug.png" alt="dug">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Elmhurst Unsweetened Almond Milk.png"
+                  alt="elmhurst almond milk">
+                <h3 class="milk-product-title">Milked Almonds</h3>
+                <img class="milk-product-brand" src="/images/elmhurst.png" alt="elmhurst">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Forager Cashewmilk.png" alt="forager cashewmilk">
+                <h3 class="milk-product-title">Organic Cashew</h3>
+                <img class="milk-product-brand" src="/images/forager project.png" alt="forager">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Good Hemp Seed Milk.png" alt="good hemp seed milk">
+                <h3 class="milk-product-title">Seed Milk</h3>
+                <img class="milk-product-brand" src="/images/good hemp.png" alt="good hemp">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Good Mylk Almond Mylk Concentrate.png"
+                  alt="good mylk almond mylk concentrate">
+                <h3 class="milk-product-title">Almond Milk</h3>
+                <img class="milk-product-brand" src="/images/good mylk.png" alt="good mylk">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img"
+                  src="/images/Hope And Sesame Refrigerated Unsweetened Original Sesamemilk.png"
+                  alt="Hope And Sesamemilk">
+                <h3 class="milk-product-title">Sesame Milk</h3>
+                <img class="milk-product-brand" src="/images/hope and sesame.png" alt="hope and sesame">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Innocent Hazelnut Milk.png" alt="innocent hazelnut milk">
+                <h3 class="milk-product-title">Hazelnut</h3>
+                <img class="milk-product-brand" src="/images/innocent.png" alt="innocent">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Isola Bio Oat Barista Drink.png"
+                  alt="isola bio oat barista drink">
+                <h3 class="milk-product-title">Oat Barista</h3>
+                <img class="milk-product-brand" src="/images/isola bio.png" alt="isola bio">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/JOI Instant Organic Oat Milk.png" alt="JOI instant">
+                <h3 class="milk-product-title">Oatmilk Powder</h3>
+                <img class="milk-product-brand" src="/images/joi.png" alt="joi">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Kiki Milk Mac Nut.png" alt="kiki milk mac nut">
+                <h3 class="milk-product-title">Nut&Seed Based Milk</h3>
+                <img class="milk-product-brand" src="/images/kiki milk.png" alt="kiki milk">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Lavva Unsweetened Plant Milk.png"
+                  alt="Lavva Unsweetened Plant Milk">
+                <h3 class="milk-product-title">Plant Milk</h3>
+                <img class="milk-product-brand" src="/images/lavva.png" alt="lavva">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Lechia Chia and Flax Milk - Vanilla.png"
+                  alt="Lechia Chia and Flax Milk">
+                <h3 class="milk-product-title">Chia & Flax Milk</h3>
+                <img class="milk-product-brand" src="/images/lechia.png" alt="lechia">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="milk-product-card">
+              <div class="milk-product-card-content">
+                <img class="milk-product-img" src="/images/Nuthatch Almond Milk.png" alt="Nuthatch Almond Milk">
+                <h3 class="milk-product-title">Almond Milk</h3>
+                <img class="milk-product-brand" src="/images/nuthatch.png" alt="nuthatch">
+                <a class="milk-product-btn" href="#">
+                  More info
+                  <span class="milk-product-btn-arrow">
+                    <svg width="25" height="16" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 9H26.7778" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M18.7773 1L26.7773 9L18.7773 17" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="product-pagination">
+        <a href="#" class="pagination-first-btn">
+          First
+        </a>
+        <button class="pagination-left-arrow">
+          <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 23L1 12L12 1" stroke="#444444" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="pagination-pages">
+          <a href="#" class="pagination-page pagination-page-active">1</a>
+          <a href="#" class="pagination-page">2</a>
+          <a href="#" class="pagination-page">3</a>
+          <a href="#" class="pagination-page">4</a>
+          <a href="#" class="pagination-page">5</a>
+          <a href="#" class="pagination-page">6</a>
+          <a href="#" class="pagination-page">...</a>
+        </div>
+        <button class="pagination-right-arrow">
+          <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L12 12L1 23" stroke="#444444" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <a href="#" class="pagination-last-btn">
+          Last
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="section-footer">
+    <div class="footer-container">
+      <div class="footer-container-left-content">
+        <a href="#" class="footer-logo">
+          <img src="/images/Milk Pick Logo - footer.png" alt="Milk Pick Logo">
+        </a>
+        <p class="footer-discription-text">“Milk Pick helps people to find alternative milk options that are dairy free
+          and delicious!”</p>
+        <p class="footer-discription-text">This website is for general education purposes only. The information in this
+          website is not intended to be
+          medical advcie.</p>
+      </div>
+      <div class="footer-container-right-content">
+        <div class="footer-nav">
+          <div class="footer-nav-container">
+            <h3 class="footer-nav-title">Category 1</h3>
+            <ul class="footer-nav-items">
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 1</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 2</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 3</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 4</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-container">
+            <h3 class="footer-nav-title">Category 2</h3>
+            <ul class="footer-nav-items">
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 1</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 2</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 3</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 4</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-nav-container">
+            <h3 class="footer-nav-title">Category 3</h3>
+            <ul class="footer-nav-items">
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 1</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 2</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 3</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 4</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-container">
+            <h3 class="footer-nav-title">Category 4</h3>
+            <ul class="footer-nav-items">
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 1</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 2</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 3</a></li>
+              <li class="footer-nav-item"><a class="footer-nav-item-link" href="#">Item 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-social-media-container">
+      <a class="footer-social-media-box" href="#">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.0004 0.818115C8.23528 0.818115 7.88827 0.830206 6.80224 0.879631C5.71833 0.929267 4.97847 1.10087 4.3311 1.35266C3.66145 1.61272 3.09341 1.9606 2.52749 2.52675C1.96114 3.09269 1.61327 3.66075 1.35237 4.33021C1.09995 4.97781 0.928142 5.7179 0.879355 6.80142C0.830781 7.88748 0.818054 8.23472 0.818054 10.9999C0.818054 13.7651 0.830357 14.1111 0.879568 15.1972C0.929415 16.2811 1.10102 17.021 1.35258 17.6684C1.61285 18.3381 1.96072 18.9061 2.52685 19.4721C3.09256 20.0384 3.6606 20.3871 4.32983 20.6472C4.97763 20.899 5.71769 21.0706 6.80139 21.1202C7.88742 21.1697 8.23422 21.1817 10.9991 21.1817C13.7645 21.1817 14.1104 21.1697 15.1965 21.1202C16.2804 21.0706 17.0211 20.899 17.6689 20.6472C18.3383 20.3871 18.9055 20.0384 19.4712 19.4721C20.0376 18.9061 20.3854 18.3381 20.6463 17.6686C20.8966 17.021 21.0684 16.2809 21.1193 15.1974C21.1681 14.1113 21.1809 13.7651 21.1809 10.9999C21.1809 8.23472 21.1681 7.88769 21.1193 6.80163C21.0684 5.71769 20.8966 4.97781 20.6463 4.33042C20.3854 3.66075 20.0376 3.09269 19.4712 2.52675C18.9049 1.96039 18.3385 1.61251 17.6682 1.35266C17.0192 1.10087 16.2789 0.929267 15.195 0.879631C14.109 0.830206 13.7632 0.818115 10.9972 0.818115H11.0004ZM10.087 2.65296C10.3581 2.65254 10.6606 2.65296 11.0004 2.65296C13.7189 2.65296 14.0411 2.66272 15.1146 2.71151C16.1073 2.7569 16.6461 2.92278 17.005 3.06215C17.4801 3.24669 17.8188 3.4673 18.175 3.82366C18.5313 4.18002 18.7519 4.51942 18.9369 4.99457C19.0763 5.35305 19.2423 5.89184 19.2875 6.88457C19.3363 7.9579 19.3469 8.28033 19.3469 10.9976C19.3469 13.7149 19.3363 14.0373 19.2875 15.1106C19.2421 16.1034 19.0763 16.6421 18.9369 17.0006C18.7524 17.4758 18.5313 17.8141 18.175 18.1703C17.8186 18.5266 17.4803 18.7472 17.005 18.9318C16.6465 19.0718 16.1073 19.2372 15.1146 19.2826C14.0413 19.3314 13.7189 19.342 11.0004 19.342C8.28174 19.342 7.95954 19.3314 6.88623 19.2826C5.89354 19.2368 5.35477 19.0709 4.99566 18.9316C4.52052 18.747 4.18113 18.5264 3.82478 18.1701C3.46843 17.8137 3.24783 17.4751 3.06287 16.9998C2.92351 16.6413 2.75742 16.1025 2.71224 15.1098C2.66345 14.0364 2.6537 13.714 2.6537 10.9951C2.6537 8.27608 2.66345 7.95536 2.71224 6.88202C2.75763 5.8893 2.92351 5.35051 3.06287 4.9916C3.24741 4.51645 3.46843 4.17705 3.82478 3.82069C4.18113 3.46433 4.52052 3.24372 4.99566 3.05875C5.35455 2.91875 5.89354 2.7533 6.88623 2.70769C7.82548 2.66527 8.18947 2.65254 10.087 2.65042V2.65296ZM16.4352 4.34357C15.7607 4.34357 15.2134 4.89021 15.2134 5.56496C15.2134 6.23951 15.7607 6.78678 16.4352 6.78678C17.1097 6.78678 17.657 6.23951 17.657 5.56496C17.657 4.89042 17.1097 4.34315 16.4352 4.34315V4.34357ZM11.0004 5.77114C8.11289 5.77114 5.77178 8.11233 5.77178 10.9999C5.77178 13.8875 8.11289 16.2277 11.0004 16.2277C13.8879 16.2277 16.2282 13.8875 16.2282 10.9999C16.2282 8.11233 13.8877 5.77114 11.0002 5.77114H11.0004ZM11.0004 7.60599C12.8747 7.60599 14.3942 9.12542 14.3942 10.9999C14.3942 12.8742 12.8747 14.3939 11.0004 14.3939C9.12595 14.3939 7.60658 12.8742 7.60658 10.9999C7.60658 9.12542 9.12595 7.60599 11.0004 7.60599Z"
+            fill="black" />
+        </svg>
+      </a>
+
+      <a class="footer-social-media-box" href="#">
+        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M21.2436 0.97472C22.2556 1.24717 23.0534 2.04504 23.3259 3.05698C23.8319 4.90572 23.8124 8.75887 23.8124 8.75887C23.8124 8.75887 23.8124 12.5926 23.3259 14.4413C23.0534 15.4532 22.2556 16.2511 21.2436 16.5236C19.3949 17.0101 12 17.0101 12 17.0101C12 17.0101 4.62447 17.0101 2.75627 16.5041C1.74433 16.2317 0.946455 15.4338 0.674009 14.4218C0.1875 12.5926 0.1875 8.73941 0.1875 8.73941C0.1875 8.73941 0.1875 4.90572 0.674009 3.05698C0.946455 2.04504 1.76379 1.2277 2.75627 0.95526C4.60501 0.46875 12 0.46875 12 0.46875C12 0.46875 19.3949 0.46875 21.2436 0.97472ZM15.7947 8.60429L9.64523 12.1461V5.0625L15.7947 8.60429Z"
+            fill="black" />
+        </svg>
+      </a>
+
+      <a class="footer-social-media-box" href="#">
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.6548 16.1355C8.2123 16.1355 9.4749 15.0205 9.4749 13.3154V0.666748H12.857C12.6673 2.97351 14.9604 5.20179 17.4894 5.15083V8.33113C15.3266 8.33113 13.4875 7.41663 12.8474 6.9091V13.3154C12.8474 16.1355 10.6288 19.3334 6.6548 19.3334C2.68075 19.3334 0.510635 16.1355 0.510635 13.3154C0.510635 9.33509 4.72281 7.02667 7.51262 7.59088V10.8302C7.37228 10.7806 7.01035 10.7072 6.70208 10.7072C5.13164 10.6493 3.8347 11.923 3.8347 13.3154C3.8347 14.8729 5.0973 16.1355 6.6548 16.1355Z"
+            fill="black" />
+        </svg>
+      </a>
+
+      <a class="footer-social-media-box" href="#">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.5 11C0.5 16.1917 4.29167 20.5083 9.25 21.3833L9.30853 21.3365C9.28902 21.3327 9.26951 21.3289 9.25 21.325V13.9167H6.625V11H9.25V8.66667C9.25 6.04167 10.9417 4.58333 13.3333 4.58333C14.0917 4.58333 14.9083 4.7 15.6667 4.81667V7.5H14.325C13.0417 7.5 12.75 8.14167 12.75 8.95833V11H15.55L15.0833 13.9167H12.75V21.325C12.7305 21.3289 12.711 21.3327 12.6915 21.3365L12.75 21.3833C17.7083 20.5083 21.5 16.1917 21.5 11C21.5 5.225 16.775 0.5 11 0.5C5.225 0.5 0.5 5.225 0.5 11Z"
+            fill="black" />
+        </svg>
+      </a>
+
+      <a class="footer-social-media-box" href="#">
+        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M19.067 5.4369C19.0749 5.64093 19.0775 5.84488 19.0775 6.04892C19.0775 12.2348 14.726 19.3761 6.7687 19.3761C4.32434 19.3761 2.05144 18.597 0.136398 17.2708C0.474915 17.3079 0.818712 17.3358 1.16778 17.3358C3.19449 17.3358 5.06117 16.5844 6.54185 15.3231C4.64879 15.2953 3.05029 13.932 2.49899 12.0772C2.76365 12.1328 3.03621 12.1607 3.31493 12.1607C3.70797 12.1607 4.08956 12.1051 4.45534 11.9938C2.47435 11.5672 0.982257 9.67532 0.982257 7.40314C0.982257 7.37532 0.982257 7.36599 0.982257 7.34744C1.56609 7.69059 2.23432 7.90379 2.94389 7.93161C1.7815 7.08766 1.01741 5.65019 1.01741 4.0272C1.01741 3.17397 1.23019 2.36708 1.60476 1.67151C3.73785 4.50942 6.92697 6.37357 10.5223 6.56833C10.4484 6.22518 10.4106 5.86358 10.4106 5.50188C10.4106 2.91438 12.3476 0.818359 14.7375 0.818359C15.9816 0.818359 17.1053 1.38417 17.894 2.29304C18.8814 2.08901 19.8064 1.69952 20.6435 1.16161C20.3191 2.25597 19.6341 3.17393 18.739 3.74893C19.6147 3.63764 20.4501 3.38743 21.2247 3.01646C20.6435 3.95315 19.912 4.77843 19.067 5.4369Z"
+            fill="black" />
+        </svg>
+      </a>
+
+      <a class="footer-social-media-box" href="#">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M1.49111 0.083252C0.713616 0.083252 0.083334 0.713533 0.083334 1.49103V18.5088C0.083334 19.2862 0.713617 19.9165 1.49111 19.9165H18.5089C19.2864 19.9165 19.9167 19.2862 19.9167 18.5088V1.49103C19.9167 0.713535 19.2864 0.083252 18.5089 0.083252H1.49111ZM4.53501 6.2425C5.48523 6.2425 6.25554 5.47219 6.25554 4.52196C6.25554 3.57174 5.48523 2.80143 4.53501 2.80143C3.58478 2.80143 2.81447 3.57174 2.81447 4.52196C2.81447 5.47219 3.58478 6.2425 4.53501 6.2425ZM7.83126 7.51403H10.6828V8.82031C10.6828 8.82031 11.4565 7.27273 13.5619 7.27273C15.44 7.27273 16.9958 8.19792 16.9958 11.018V16.9646H14.0408V11.7385C14.0408 10.075 13.1527 9.89201 12.4759 9.89201C11.0714 9.89201 10.8309 11.1035 10.8309 11.9555V16.9646H7.83126V7.51403ZM6.03485 7.51404H3.03517V16.9646H6.03485V7.51404Z"
+            fill="black" />
+        </svg>
+      </a>
+
+    </div>
+  </footer>
+
+  <section class="footer-copy-right-section">
+    <span class="copy-right-text">Copy right 2023</span>
+    <span class="privacy-policy-text">Privacy Policy</span>
+    <span class="affiliate-disclosure-text">Affiliate Disclosure</span>
+  </section>
+  <script src=" js/app.js"></script>
+</body>
+
+</html>
