@@ -24,11 +24,13 @@
   <main class="main-container">
     <nav class="header-nav">
       <div class="nav-img-box">
-        <img src="/images/Milk Pick Logo - Dark 1.png" alt="logo">
+        <a href="home.html">
+          <img src="/images/Milk Pick Logo - Dark 1.png" alt="header logo">
+        </a>
       </div>
       <div class="nav-items">
         <button class="nav-item--close">
-          <img class="hamburger-close-img" src="/images/close.png" alt="close">
+          <img src="/images/close.png" alt="close">
         </button>
         <div class="nav-item">
           <a href="">Compare Milk</a>
@@ -42,11 +44,9 @@
       </div>
 
       <button class="hamburger">
-        <img class="hamburger-open-img" src="/images/hamburger-icon.png" alt="hamburger">
+        <img src="/images/hamburger-icon.png" class="hamburger-icon" alt="hamburger">
       </button>
     </nav>
-
-    <button id="nav-toggle">Menu</button>
 
     <section class="header-banner">
       <div class="header-banner--left">
@@ -70,12 +70,12 @@
         <div class="milk-pick-product-left">
           <div class="milk-product-filter-container">
             <div class="milk-type-box">
+              <button class="filter-close-btn">
+                <img src="/images/close.png">
+              </button>
               <div class="milk-type-button">
                 <h3 class="milk-type-button-heading">Milk Type</h3>
-                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img class="milk-type-button-img" src="/images/icon-minus.png" alt="icon-minus">
               </div>
 
               <div class="milk-type-content">
@@ -173,10 +173,7 @@
             <div class="milk-brand-box">
               <div class="milk-brand-button">
                 <h3 class="milk-type-button-heading">Brand</h3>
-                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img class="milk-type-button-img" src="/images/icon-minus.png" alt="icon-minus">
               </div>
               <div class="milk-brand-content">
                 <div class="milk-brand-search-box">
@@ -331,10 +328,7 @@
             <div class="milk-flavor-box">
               <div class="milk-flavor-button">
                 <h3 class="milk-type-button-heading">Flavor</h3>
-                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img class="milk-type-button-img" src="/images/icon-minus.png" alt="icon-minus">
               </div>
               <div class="milk-flavor-content">
                 <div class="check-box-content">
@@ -359,10 +353,7 @@
             <div class="milk-storage-box">
               <div class="milk-storage-button">
                 <h3 class="milk-type-button-heading">Storage</h3>
-                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img class="milk-type-button-img" src="/images/icon-minus.png" alt="icon-minus">
               </div>
               <div class="milk-storage-content">
                 <div class="check-box-content">
@@ -387,10 +378,7 @@
             <div class="milk-features-box">
               <div class="milk-feature-button">
                 <h3 class="milk-type-button-heading">Features</h3>
-                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img class="milk-type-button-img" src="/images/icon-minus.png" alt="icon-minus">
               </div>
               <div class="milk-feature-content">
                 <div class="check-box-content">
@@ -415,10 +403,7 @@
             <div class="milk-buying-option-box">
               <div class="milk-buying-option-button">
                 <h3 class="milk-type-button-heading">Buying Option</h3>
-                <svg class="milk-type-button-img" width="20" height="1" viewBox="0 0 20 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 1H1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img class="milk-type-button-img" src="/images/icon-minus.png" alt="icon-minus">
               </div>
               <div class="milk-buying-option-content">
                 <div class="check-box-content">
@@ -883,7 +868,7 @@
   <footer class="section-footer">
     <div class="footer-container">
       <div class="footer-container-left-content">
-        <a href="#" class="footer-logo">
+        <a href="home.html" class="footer-logo">
           <img src="/images/Milk Pick Logo - footer.png" alt="Milk Pick Logo">
         </a>
         <p class="footer-discription-text">“Milk Pick helps people to find alternative milk options that are dairy free
@@ -993,6 +978,15 @@
     <span class="privacy-policy-text">Privacy Policy</span>
     <span class="affiliate-disclosure-text">Affiliate Disclosure</span>
   </section>
+
+  <div class="milk-pick-product-btn-wrapper">
+    <button class="milk-pick-product-toggle">
+      <img src="/images/filter-sort-icon.png" alt="filter button">
+      <span class="milk-pick-product-toggle-text">
+        Filters & Sort (2)
+      </span>
+    </button>
+  </div>
   <script src=" js/app.js"></script>
 </body>
 
