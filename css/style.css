@@ -155,6 +155,10 @@ body {
   color: var(--color-neutral-n3);
 }
 
+.header-banner-wrapper {
+  border-bottom: 1px solid var(--color-neutral-n5);
+}
+
 .header-banner {
   max-width: 1800px;
   width: 100%;
@@ -196,18 +200,18 @@ body {
   object-fit: contain;
 }
 
-/* HR line */
-.hr-line {
-  width: 100%;
-  background-color: var(--color-neutral-n5);
-  height: 1px;
+/* .milk-pick-product-wrapper {
+  position: relative;
+} */
+
+.milk-product-filter-wrapper {
+  position: relative;
 }
 
 .milk-pick-product-container {
   max-width: 1800px;
   width: 100%;
   margin-top: 32px;
-  position: relative;
 }
 
 .milk-pick-product-wrapper {
@@ -251,7 +255,7 @@ body {
 .milk-buying-option-box {
   margin-bottom: 16px;
   border-bottom: 1px solid var(--color-neutral-n4);
-  padding-bottom: 26px;
+  padding-bottom: 16px;
 }
 
 .milk-type-button,
@@ -263,7 +267,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 33px;
 }
 
 .milk-type-button-heading {
@@ -275,9 +278,8 @@ body {
   color: var(--color-neutral-n1);
 }
 
-.milk-type-button-img {
-  width: 20px;
-  height: 2px;
+.filter-box-content {
+  margin-top: 16px;
 }
 
 .check-box-content {
@@ -497,6 +499,7 @@ body {
 }
 
 .milk-product-btn-arrow svg {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -507,6 +510,21 @@ body {
   transform: translateX(10px);
 }
 
+.filter-box-content {
+  max-height: 100%;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.hidden {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.filter-box-header {
+  cursor: pointer;
+}
 .section-footer {
   padding: 84px 60px 95px 60px;
   background: var(--color-dark-blue);
@@ -614,6 +632,9 @@ body {
 }
 
 .footer-copy-right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
@@ -892,13 +913,14 @@ body {
 
   .milk-type-box {
     position: relative;
+    margin-top: 30px;
   }
 
   .filter-close-btn {
     position: absolute;
-    top: -4%;
-    left: 91%;
-    z-index: 1000;
+    top: -78px;
+    left: 240px;
+    z-index: 1001;
     border: none;
     background: transparent;
     width: 20px;
@@ -938,6 +960,11 @@ body {
     margin-bottom: 45px;
   }
 
+  .footer-nav {
+    gap: 0;
+    justify-content: space-between;
+  }
+
   .footer-container-right-content {
     justify-content: flex-start;
     flex-direction: column;
@@ -951,18 +978,253 @@ body {
   }
 }
 
+@media screen and (min-width: 830px) {
+  .product-pagination-mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .pagination-pages {
     gap: 25px;
+  }
+  .product-pagination-desktop {
+    display: none;
+  }
+
+  .copy-right-text,
+  .privacy-policy-text,
+  .affiliate-disclosure-text {
+    font-size: 18px;
+    line-height: 130.02%;
+  }
+
+  .copy-right-text,
+  .privacy-policy-text {
+    padding-right: 10px;
+    margin-right: 10px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .main-container {
-    padding: 50px 20px;
+    padding: 100px 20px;
+  }
+
+  .header-banner {
+    padding: 25px 18px;
   }
 
   .section-footer {
     padding: 50px 20px;
+  }
+
+  .product-pagination {
+    gap: 20px;
+  }
+
+  .pagination-pages {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    padding: 75px 20px 64px 20px;
+  }
+
+  .nav-img-box img {
+    width: 138px;
+    height: 22px;
+    object-fit: contain;
+  }
+
+  .nav-items {
+    padding: 25px;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .nav-item a {
+    font-size: 20px;
+  }
+
+  .header-banner {
+    margin-bottom: 20px;
+  }
+
+  .header-banner--left {
+    width: 100%;
+  }
+
+  .header-banner-heading {
+    margin-bottom: 20px;
+  }
+
+  .heading-primary {
+    font-size: 30px;
+  }
+
+  .paragraph-primary {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .milk-pick-product-container {
+    margin-top: 16px;
+  }
+
+  .milk-products-container {
+    margin-top: 16px;
+    gap: 20px;
+  }
+
+  .milk-product-card {
+    width: 100%;
+  }
+
+  .milk-product-img {
+    width: 198px;
+    height: 198px;
+    margin-bottom: 20px;
+  }
+
+  .milk-product-brand {
+    margin: 0 auto 20px auto;
+  }
+
+  .milk-product-search-input {
+    padding: 16px 7px 16px 12px;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .milk-product-search-btn {
+    padding: 11px 22px;
+    right: 7px;
+    top: 5px;
+  }
+
+  .milk-product-search-btn img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-logo {
+    width: 220px;
+    height: 35px;
+    margin-bottom: 36px;
+  }
+
+  .footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .footer-discription-text {
+    font-size: 16px;
+  }
+
+  .footer-container-right-content {
+    max-width: 100%;
+  }
+
+  .footer-nav {
+    gap: 80px;
+    justify-content: flex-start;
+  }
+
+  .footer-container-left-content {
+    padding: 0;
+  }
+
+  .footer-nav-title {
+    font-size: 16px;
+  }
+
+  .footer-nav-item-link {
+    font-size: 16px;
+  }
+
+  .footer-copy-right-section {
+    padding: 33px 20px;
+  }
+
+  .copy-right-text,
+  .privacy-policy-text,
+  .affiliate-disclosure-text {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .copy-right-text,
+  .privacy-policy-text {
+    padding-right: 7px;
+    margin-right: 7px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pagination-first-btn,
+  .pagination-last-btn {
+    font-size: 16px;
+  }
+
+  .pagination-left-arrow svg,
+  .pagination-right-arrow svg {
+    display: block;
+    width: 6px;
+    height: 12px;
+    object-fit: contain;
+  }
+
+  .pagination-page {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .milk-pick-product-toggle {
+    padding: 20px;
+  }
+
+  .milk-pick-product-toggle img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .milk-pick-product-toggle-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .copy-right-text,
+  .privacy-policy-text,
+  .affiliate-disclosure-text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .footer-social-media-container {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .footer-social-media-box:not(:last-child) {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .copy-right-text,
+  .privacy-policy-text,
+  .affiliate-disclosure-text {
+    font-size: 10px;
   }
 }
