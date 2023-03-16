@@ -117,6 +117,7 @@ body {
   margin: 0 auto;
 }
 
+/* Navbar */
 .header-nav {
   display: flex;
   align-items: center;
@@ -191,6 +192,7 @@ body {
   transform-origin: right;
 }
 
+/* Header */
 .header-banner-wrapper {
   border-bottom: 1px solid var(--color-neutral-n5);
 }
@@ -236,10 +238,7 @@ body {
   object-fit: contain;
 }
 
-/* .milk-pick-product-wrapper {
-  position: relative;
-} */
-
+/* Filter section */
 .milk-product-filter-wrapper {
   position: relative;
 }
@@ -370,6 +369,7 @@ body {
   color: var(--color-neutral-n3);
 }
 
+/* Milk Product Right Section */
 .milk-pick-product-right {
   max-width: 1203px;
   width: 100%;
@@ -476,7 +476,8 @@ body {
   margin-top: 48px;
   flex-wrap: wrap;
   align-items: center;
-  gap: 48px;
+  justify-content: space-between;
+  gap: 48px 0;
 }
 
 .milk-product-card {
@@ -563,6 +564,8 @@ body {
 .filter-box-header {
   cursor: pointer;
 }
+
+/* Footer Section */
 .section-footer {
   padding: 84px 60px 95px 60px;
   background: var(--color-dark-blue);
@@ -681,6 +684,7 @@ body {
   text-align: center;
 }
 
+/* Copy right section */
 .copy-right-text,
 .privacy-policy-text,
 .affiliate-disclosure-text {
@@ -700,6 +704,7 @@ body {
   margin-right: 23px;
 }
 
+/* Media Queries */
 @media screen and (max-width: 1742px) {
   .milk-pick-product-left {
     max-width: 450px;
@@ -743,10 +748,6 @@ body {
 
   .milk-pick-product-right {
     max-width: 937px;
-  }
-
-  .milk-products-container {
-    gap: 23px;
   }
 
   .footer-container-right-content {
@@ -981,10 +982,6 @@ body {
 
   .header-banner--right {
     display: none;
-  }
-
-  .milk-products-container {
-    justify-content: center;
   }
 
   .footer-container {
