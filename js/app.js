@@ -5,11 +5,17 @@ const hamburgerIcon = document.querySelector(".hamburger-icon");
 const navItems = document.querySelector(".nav-items");
 const navItemsClose = document.querySelector(".nav-item--close");
 const filterCloseBtn = document.querySelector(".filter-close-btn");
+const milkTypeBox = document.querySelectorAll(".filter-box");
+const filterheader = document.querySelectorAll(".filter-box-header");
+const filterContent = document.querySelectorAll(".filter-box-content");
 
-sidebarToggle.addEventListener("click", () => sidebar.classList.toggle("active"));
-filterCloseBtn.addEventListener("click", () => sidebar.classList.remove("active"));
 hamburger.addEventListener("click", () => navItems.classList.toggle("active"));
 navItemsClose.addEventListener("click", () => navItems.classList.toggle("active"));
+
+if (sidebarToggle && filterCloseBtn) {
+  sidebarToggle.addEventListener("click", () => sidebar.classList.toggle("active"));
+  filterCloseBtn.addEventListener("click", () => sidebar.classList.remove("active"));
+}
 
 document.addEventListener("click", (event) => {
   if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
@@ -19,10 +25,6 @@ document.addEventListener("click", (event) => {
     navItems.classList.remove("active");
   }
 });
-
-const milkTypeBox = document.querySelectorAll(".filter-box");
-const filterheader = document.querySelectorAll(".filter-box-header");
-const filterContent = document.querySelectorAll(".filter-box-content");
 
 filterContent.forEach((content) => {
   content.classList.add("hidden");
