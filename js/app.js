@@ -9,8 +9,10 @@ const milkTypeBox = document.querySelectorAll(".filter-box");
 const filterheader = document.querySelectorAll(".filter-box-header");
 const filterContent = document.querySelectorAll(".filter-box-content");
 
-hamburger.addEventListener("click", () => navItems.classList.toggle("active"));
-navItemsClose.addEventListener("click", () => navItems.classList.toggle("active"));
+if (hamburger && navItemsClose) {
+  hamburger.addEventListener("click", () => navItems.classList.toggle("active"));
+  navItemsClose.addEventListener("click", () => navItems.classList.toggle("active"));
+}
 
 if (sidebarToggle && filterCloseBtn) {
   sidebarToggle.addEventListener("click", () => sidebar.classList.toggle("active"));
