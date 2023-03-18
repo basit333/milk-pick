@@ -20,7 +20,7 @@ if (sidebarToggle && filterCloseBtn) {
 }
 
 document.addEventListener("click", (event) => {
-  if (!sidebar.contains(event.target) && event.target !== sidebarToggle) {
+  if (sidebar && !sidebar.contains(event.target) && event.target !== sidebarToggle) {
     sidebar.classList.remove("active");
   }
   if (!navItems.contains(event.target) && event.target !== hamburgerIcon) {
