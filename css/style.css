@@ -46,6 +46,16 @@
   color: var(--color-neutral-n2);
 }
 
+.paragraph-secondary {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.015em;
+  color: var(--color-neutral-n3);
+}
+
 /* Pagination */
 .product-pagination {
   display: flex;
@@ -119,8 +129,8 @@ body {
 }
 
 .main-container {
-  padding: 88px 60px 70px 60px;
-  max-width: 1920px;
+  padding: 88px 0 0 0;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
@@ -192,44 +202,18 @@ body {
 }
 
 .header-banner {
-  max-width: 1800px;
-  width: 100%;
-  padding: 53px 42px 64px 36px;
-  border: 1px solid var(--color-neutral-n4);
+  padding: 53px 0 46px 0;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
   gap: 33px;
-  position: relative;
-  margin-bottom: 44px;
 }
 
 .header-banner--left {
-  width: 90%;
+  max-width: 100%;
+  text-align: center;
 }
 
 .header-banner-heading {
   margin-bottom: 21px;
-}
-
-.header-banner-paragraph {
-  padding: 0 77px 0 0;
-}
-
-.header-banner--right {
-  width: 10%;
-}
-
-.header-banner-img-box {
-  position: absolute;
-  bottom: -25px;
-  right: 42px;
-}
-
-.header-banner-img-box img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
 }
 
 /* Filter section */
@@ -240,6 +224,7 @@ body {
 .milk-pick-product-container {
   max-width: 1800px;
   width: 100%;
+  margin: 32px 0 70px 0;
   margin-top: 32px;
 }
 
@@ -250,7 +235,7 @@ body {
 
 .milk-pick-product-left {
   position: relative;
-  max-width: 550px;
+  max-width: 280px;
   width: 100%;
   height: min-content;
   background: var(--color-neutral-n8);
@@ -472,39 +457,58 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 48px 0;
+  gap: 25px 10px;
 }
 
 .milk-product-card {
   border: 1px solid var(--color-neutral-n5);
   border-radius: 33px;
-  padding: 19px 24px 23px 24px;
+  padding: 20px 10px;
+  width: 32.4%;
 }
 
 .milk-product-card-content {
   text-align: center;
 }
 
+.milk-product-main-img-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px auto;
+  margin-bottom: 20px;
+}
+
 .milk-product-img {
-  margin-bottom: 33px;
-  width: 230px;
-  height: 230px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
 .milk-product-title {
   font-family: var(--primary-font-family);
   font-weight: 700;
-  font-size: 24px;
-  line-height: 130.02%;
+  font-size: 20px;
+  line-height: 120%;
   letter-spacing: 0.045em;
   color: var(--color-black);
   margin-bottom: 12px;
 }
 
-.milk-product-brand {
-  display: inline-block;
+.milk-product-brand-img-box {
+  position: relative;
+  width: 108px;
+  height: 65px;
   margin: 0 auto 37px auto;
+}
+
+.milk-product-brand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .milk-product-btn {
@@ -564,15 +568,19 @@ body {
 .section-footer {
   padding: 84px 60px 95px 60px;
   background: var(--color-dark-blue);
+  max-width: 100%;
   width: 100%;
-  max-width: 1920px;
+}
+
+.footer-container-wrapper {
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .footer-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 68px;
 }
@@ -606,7 +614,7 @@ body {
 
 .footer-nav {
   display: flex;
-  gap: 102px;
+  gap: 30px;
 }
 
 .footer-container-right-content {
@@ -614,7 +622,8 @@ body {
   justify-content: end;
   max-width: 60%;
   width: 100%;
-  gap: 102px;
+  gap: 35px;
+  padding: 15px 0 0 0;
 }
 
 .footer-nav-title {
@@ -671,7 +680,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1920px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 50px;
@@ -894,11 +903,20 @@ body {
   color: var(--color-black);
 }
 
-.product-from-willas-product-brand {
+.product-from-willas-product-brand-box {
+  position: relative;
   width: 96px;
   height: 52px;
+  margin: 0 auto 33px auto;
+}
+
+.product-from-willas-product-brand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  margin-bottom: 33px;
 }
 
 .product-from-willas-product-btn {
@@ -946,7 +964,7 @@ body {
 .more-brands-container {
   max-width: 1920px;
   width: 100%;
-  margin-bottom: 38px;
+  margin-bottom: 108px;
 }
 
 .more-brands-title {
@@ -958,6 +976,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .more-brands-card-box {
@@ -969,7 +988,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 427px;
+  width: 380px;
   height: 391px;
   border: 1px solid var(--color-neutral-n5);
   border-radius: 29px;
@@ -1002,7 +1021,7 @@ body {
 
 /* Milk Brands */
 .milk-brands-wrapper {
-  max-width: 1920px;
+  max-width: 100%;
   width: 100%;
   border-bottom: 1px solid var(--color-neutral-n5);
   margin: 34px 0 32px 0;
@@ -1010,26 +1029,13 @@ body {
 }
 
 .milk-brands-container {
-  border: 1px solid var(--color-neutral-n4);
+  /* border: 1px solid var(--color-neutral-n4); */
   border-radius: 16px;
-  padding: 25px 10px 20px 47px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
 
 .milk-brands-container-title {
   margin-bottom: 18px;
-}
-
-.milk-brands-container-right {
-  max-width: 442px;
-}
-
-.milk-brands-container-img-box {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 .brands-search-bar {
@@ -1039,6 +1045,7 @@ body {
 
 .milk-brands-products-container {
   margin-top: 46px;
+  margin: 46px 0 55px 0;
 }
 
 .milk-brands-prducts-wrapper {
@@ -1085,42 +1092,299 @@ body {
   color: var(--color-black);
 }
 
+.willas-original-container {
+  margin: 50px 0 71px 0;
+  display: flex;
+  gap: 44px;
+}
+
+.willas-original-left-wrapper {
+  border: 1px solid var(--color-neutral-n5);
+  padding: 90px 22px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 523px;
+  height: 664px;
+}
+
+.willas-original-left-sub-imgs {
+  display: flex;
+  align-items: center;
+}
+
+.willas-original-left-sub-img-box {
+  width: 72px;
+  height: 72px;
+  margin-top: 32px;
+}
+
+.willas-original-left-sub-img-box:not(:last-child) {
+  margin-right: 46px;
+}
+
+.willas-original-left-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.willas-original-container-right {
+  position: relative;
+}
+
+.willas-original-heading {
+  margin-bottom: 34px;
+  max-width: 575px;
+}
+
+.willas-original-descripton-title {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.015em;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.willas-original-descripton-text {
+  margin-bottom: 69px;
+}
+
+.willas-original-btns {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.willas-original-btn {
+  padding: 23px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+  border-radius: 16px;
+}
+
+.btn-light {
+  background: var(--color-neutral-n7);
+  border: 1px solid var(--color-dark-blue);
+  border-radius: 16px;
+  color: var(--color-dark-blue);
+}
+
+.btn-dark {
+  color: var(--color-neutral-n8);
+  background: var(--color-dark-blue);
+}
+
+.willas-original-badge {
+  background: var(--color-light-blue-1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.015em;
+  color: var(--color-dark-blue);
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.willas-original-btns svg {
+  margin-left: 20px;
+  transition: all 0.3s linear;
+}
+
+.btn-light:hover svg {
+  transform: translateX(10px);
+}
+
+.btn-dark:hover svg {
+  transform: translateX(10px);
+}
+
+.willas-original-product-details {
+  margin-bottom: 66px;
+}
+
+.willas-original-product-ingredients:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.willas-original-product-ingredients-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 5px;
+  border-top: 1px solid var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  cursor: pointer;
+}
+
+.products-details-title {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130.02%;
+  letter-spacing: 0.045em;
+  color: var(--color-black);
+}
+
+.ingredients-icon-box {
+  width: 22px;
+  height: 22px;
+}
+
+.ingredients-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ingredients-content {
+  margin-top: 33px;
+  padding-left: 25px;
+  display: none;
+}
+
+.ingredients-content-show {
+  display: block;
+}
+
+.ingredients-list {
+  font-family: var(--primary-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.015em;
+  color: var(--color-neutral-n2);
+}
+
+.ingredients-list-bold {
+  font-weight: 700;
+}
+
+.ingredients-list span {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.content-details-list:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+.nutrition-facts-box {
+  display: none;
+  gap: 202px;
+  margin-top: 33px;
+  padding-left: 25px;
+}
+
+.nutrition-facts-box-show {
+  display: flex;
+}
+
+/* slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--color-neutral-n7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: var(--color-neutral-n7) !important;
+  box-shadow: 0px 4px 4px rgba(177, 177, 177, 0.25) !important;
+  padding: 15px 20px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+.swiper-button-prev {
+  left: -16px;
+}
+
+.swiper-button-next {
+  right: -16px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  color: #444444;
+  font-weight: 700;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-neutral-n5);
+  border-radius: 6px;
+  opacity: 1;
+  width: 24px;
+  height: 8px;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  /* Neutral/N1 */
+  width: 41px;
+  background: var(--color-neutral-n1);
+}
+
+/* slider-end */
+
+.more-products-willas-card {
+  width: 386px !important;
+}
+
+.more-products-wrapper {
+  position: relative;
+  padding-bottom: 64px;
+  margin-bottom: 75px;
+}
+
+.more-product-from-willas-title {
+  margin-bottom: 64px;
+  font-weight: 700;
+}
+
+.more-products-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* You Might */
+.willas-product-you-like {
+  margin-bottom: 84px;
+}
+
 /* Media Queries */
-@media screen and (max-width: 1742px) {
-  .milk-pick-product-left {
-    max-width: 450px;
-  }
-}
-
-@media screen and (max-width: 1642px) {
-  .milk-pick-product-left {
-    max-width: 400px;
-  }
-}
-
-@media screen and (max-width: 1591px) {
-  .milk-pick-product-left {
-    max-width: 350px;
-  }
-}
-
-@media screen and (max-width: 1541px) {
-  .milk-pick-product-left {
-    max-width: 335px;
-  }
-}
 
 @media screen and (max-width: 1440px) {
   .header-nav {
     max-width: 1320px;
-  }
-
-  .header-banner {
-    max-width: 1320px;
-  }
-
-  .header-banner-paragraph {
-    padding: 0 140px 0 0;
   }
 
   .milk-pick-product-container {
@@ -1131,23 +1395,9 @@ body {
     max-width: 937px;
   }
 
-  .footer-container-right-content {
-    gap: 75px;
-  }
-
   .product-pagination {
     gap: 34px;
     margin-right: 40px;
-  }
-
-  /* More Brands */
-  .more-brands-cards-container {
-    gap: 20px;
-    justify-content: flex-start;
-  }
-
-  .more-brands-card {
-    width: 400px;
   }
 
   .product-from-willas-card {
@@ -1155,9 +1405,9 @@ body {
   }
 }
 
-@media screen and (max-width: 1404px) {
-  .milk-product-card {
-    width: 45%;
+@media screen and (max-width: 1378px) {
+  .willas-original-btn {
+    padding: 23px;
   }
 }
 
@@ -1175,14 +1425,10 @@ body {
 
 @media screen and (max-width: 1320px) {
   .main-container {
-    padding: 50px 30px;
+    padding: 50px 30px 0 30px;
   }
 
   .header-nav {
-    max-width: 1280px;
-  }
-
-  .header-banner {
     max-width: 1280px;
   }
 
@@ -1191,7 +1437,6 @@ body {
   }
 
   .milk-product-card-content {
-    max-width: 297px;
     margin: 0 auto;
   }
 
@@ -1222,6 +1467,24 @@ body {
 
   .more-brands-card {
     width: 320px;
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .willas-original-descripton-text {
+    margin-bottom: 29px;
+  }
+}
+
+@media screen and (max-width: 1117px) {
+  .milk-product-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .willas-original-left-wrapper {
+    width: 450px;
   }
 }
 
@@ -1383,7 +1646,7 @@ body {
   .filter-close-btn {
     position: absolute;
     top: -78px;
-    left: 240px;
+    right: 0;
     z-index: 1001;
     border: none;
     background: transparent;
@@ -1395,18 +1658,6 @@ body {
   .filter-close-btn img {
     width: 20px;
     height: 20px;
-  }
-
-  .header-banner--right {
-    width: 100%;
-  }
-
-  .header-banner-paragraph {
-    padding: 0;
-  }
-
-  .header-banner--right {
-    display: none;
   }
 
   .footer-container {
@@ -1456,10 +1707,6 @@ body {
     height: 300px;
   }
 
-  .product-from-willas-box {
-    justify-content: center;
-  }
-
   .more-brands-card {
     width: 280px;
     height: 324px;
@@ -1475,16 +1722,8 @@ body {
     padding-bottom: 23px;
   }
 
-  .milk-brands-container {
-    padding: 25px 17px 34px 18px;
-  }
-
   .milk-brands-container-title {
     margin-bottom: 10px;
-  }
-
-  .milk-brands-container-right {
-    display: none;
   }
 
   .milk-brands-prducts-wrapper {
@@ -1498,6 +1737,20 @@ body {
   .brands-search-bar {
     max-width: 100%;
     margin-left: 0;
+  }
+
+  .willas-original-container {
+    flex-direction: column;
+  }
+
+  .willas-original-left-wrapper {
+    width: 100%;
+    height: 400px;
+    padding: 62px 22px;
+  }
+
+  .more-products-willas-card {
+    width: 453px !important;
   }
 }
 
@@ -1546,11 +1799,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .main-container {
-    padding: 100px 20px;
+    padding: 100px 20px 0 20px;
   }
 
   .header-banner {
-    padding: 25px 18px;
+    padding: 25px 0 0 0;
   }
 
   .section-footer {
@@ -1575,11 +1828,26 @@ body {
     height: 100px;
     margin-bottom: 27px;
   }
+
+  .more-products-willas-card {
+    width: 100% !important;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nutrition-facts-box-show {
+    flex-direction: column;
+    gap: 11px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .main-container {
-    padding: 75px 20px 64px 20px;
+    padding: 75px 20px 0 20px;
   }
 
   .nav-img-box img {
@@ -1605,7 +1873,7 @@ body {
   }
 
   .header-banner--left {
-    width: 100%;
+    text-align: left;
   }
 
   .header-banner-heading {
@@ -1621,26 +1889,26 @@ body {
     line-height: 120%;
   }
 
+  .paragraph-secondary {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
   .milk-pick-product-container {
-    margin-top: 16px;
+    margin: 16px 0 64px 0;
   }
 
   .milk-products-container {
     margin-top: 16px;
-    gap: 20px;
   }
 
   .milk-product-card {
     width: 100%;
   }
 
-  .milk-product-img {
-    width: 198px;
-    height: 198px;
-    margin-bottom: 20px;
-  }
-
-  .milk-product-brand {
+  .milk-product-brand-img-box {
+    width: 85px;
+    height: 45px;
     margin: 0 auto 20px auto;
   }
 
@@ -1659,6 +1927,10 @@ body {
   .milk-product-search-btn img {
     width: 18px;
     height: 18px;
+  }
+
+  .more-brands-container {
+    margin-bottom: 64px;
   }
 
   .footer-logo {
@@ -1782,7 +2054,7 @@ body {
 
   /* Milk Brands */
   .milk-brands-products-container {
-    margin-top: 39px;
+    margin: 39px 0 82px 0;
   }
 
   .milk-brands-wrapper {
@@ -1800,9 +2072,71 @@ body {
     width: 47%;
   }
 
+  .willas-original-container {
+    gap: 47px;
+    margin: 36px 0 48px 0;
+  }
+
   .milk-brands-card-title {
     font-size: 16px;
     line-height: 120%;
+  }
+
+  .willas-original-heading {
+    padding-top: 80px;
+    margin-bottom: 29px;
+  }
+
+  .willas-original-descripton-title {
+    margin-bottom: 7px;
+  }
+
+  .willas-original-badge {
+    right: auto;
+  }
+
+  .willas-original-btns {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .willas-original-product-ingredients-btn {
+    padding: 17px 5px;
+  }
+
+  .products-details-title {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .ingredients-content {
+    margin-top: 29px;
+  }
+
+  .nutrition-facts-box {
+    margin-top: 29px;
+  }
+
+  .ingredients-list {
+    font-size: 16px;
+    line-height: 120%;
+  }
+
+  .ingredients-icon-box {
+    width: 15px;
+    height: 15px;
+  }
+
+  .willas-original-product-details {
+    margin-bottom: 46px;
+  }
+
+  .more-product-from-willas-title {
+    margin-bottom: 28px;
+  }
+
+  .more-products-wrapper {
+    padding-bottom: 0;
   }
 }
 
